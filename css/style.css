@@ -63,3 +63,77 @@ img {
   color: green;
   text-decoration: underline;
 }
+.grid-container {
+  padding-top: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "page page page page"
+    "page page page page"
+    "page page page page";
+  padding-bottom: 1%;
+  border-bottom: black solid 1px;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 1.3fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Main-pic Main-pic snaps"
+    "Main-pic Main-pic snaps";
+  grid-area: page;
+}
+
+.Main-pic {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.6fr 0.4fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    "headtext headtext headtext";
+  grid-area: Main-pic;
+  padding-left: 1%;
+  border-right: solid black 1px;
+}
+
+.headtext {
+  grid-area: headtext;
+}
+
+.snaps {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "img1 img1 text1"
+    "image2 image2 text2";
+  grid-area: snaps;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.text1 {
+  grid-area: text1;
+}
+
+.image2 {
+  grid-area: image2;
+}
+
+.text2 {
+  grid-area: text2;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+}
