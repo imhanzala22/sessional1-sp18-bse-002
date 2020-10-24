@@ -1,0 +1,65 @@
+.navbar a {
+  float: left;
+  padding: 0 -10;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 5px;
+}
+.navbar .fawesome {
+  margin-left: 30px;
+  padding: 0 -10;
+}
+
+.navbar .fawesomes {
+  margin-left: 50px;
+  padding: 0 40;
+}
+
+.navbar a:hover {
+  color: active;
+}
+.navbar sticky:hover {
+  color: active;
+  text-decoration-skip-ink: all;
+}
+/* end of nav */
+.lower-menu {
+  color: gray;
+}
+.lower-menu a.nav-link.active {
+  border-bottom: 5px solid whitesmoke;
+  margin-top: 10px;
+}
+.lower-menu a.nav-link:hover {
+  color: black;
+  border-bottom: 5px whitesmoke;
+  text-decoration: underline;
+}
+
+.mainpic {
+  text-align: center;
+}
+/* grid1 */
+.grid1,
+img {
+  float: right;
+}
+/* footer */
+.footer {
+  color: white;
+  background-color: black;
+}
+.navbar .fawesomes1 ul li {
+  size: 20px;
+  list-style-type: none;
+}
+
+#list {
+  margin: 10px;
+  list-style: none;
+}
+#list li:hover {
+  color: green;
+  text-decoration: underline;
+}
